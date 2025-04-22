@@ -327,12 +327,180 @@ li {
 /* End planSection */
 
 /* Start aboutSection */
+.aboutMeSection {
+  padding: 60px 0;
+  min-height: 200px;
+  width: 100%;
+  margin: 0 auto;
+}
+.aboutWrapper {
+  margin-top: 80px;
+  align-items: center;
+}
+.aboutImg {
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 14px;
+  box-shadow: var(--themeTextColor) 0px 0px 0px 5px;
+  padding: 2px;
+}
+
+.aboutImg img {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 14px;
+  width: 100%;
+}
+.name {
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 1.3em;
+  color: var(--textBlack);
+}
+.des,
+.interest {
+  font-family: var(--primaryFont);
+  font-size: 1em;
+  color: var(--secondaryFontColor);
+  font-weight: normal;
+  margin-top: 12px;
+}
+.interest {
+  margin-bottom: 40px;
+  color: #434141;
+}
+.certificate {
+  font-size: 2rem;
+  font-weight: 600;
+  font-family: var(--primaryFont);
+  color: var(--textBlack);
+}
+
+.singleCertificate {
+  margin-top: 20px;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.deegre {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.fa-certificate {
+  font-size: 4rem;
+  margin-right: 20px;
+  color: var(--themeTextColor);
+}
+.institute {
+  font-family: var(--primaryFont);
+  color: #181515;
+  font-size: 1em;
+}
+.year {
+  color: #7d6868;
+  font-family: var(--primaryFont);
+  margin-top: 8px;
+}
 /* End aboutSection */
 
 /* Start reviewSection */
+.reviewSection {
+  padding: 60px 0;
+}
+.singleReview {
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
+    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
+    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  cursor: pointer;
+  border-radius: 14px;
+  padding: 20px;
+  transition: 0.5s ease-in-out;
+}
+
+.singleReview:hover {
+  background-color: #00cba941;
+  scale: 0.9;
+}
+
+.reviewWrapper {
+  margin-top: 80px;
+}
+
+.qoute i {
+  font-size: 4rem;
+  color: var(--themeTextColor);
+  margin-bottom: 20px;
+}
+.reviewer {
+  font-family: var(--primaryFont);
+  font-weight: 600;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  color: #363636;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.reviewSection ul {
+  display: flex;
+  justify-content: center;
+}
+.reviewSection ul li i {
+  color: var(--themeTextColor);
+}
 /* End reviewSection */
 
 /* Start contactSection */
+.contactSection {
+  padding: 60px 0;
+  min-height: 200px;
+  background-color: var(--theme);
+}
+.footerName {
+  color: var(--textWhite);
+  font-family: var(--primaryFont);
+  text-align: center;
+  font-size: 1.4em;
+}
+.socialMedia {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  list-style: none;
+}
+.socialMedia li {
+  float: left;
+  padding: 0 20px;
+}
+
+.socialMedia li a {
+  text-decoration: none;
+  color: var(--textWhite);
+  font-size: 1.4em;
+  transition: 0.5s ease-in-out;
+}
+.paraContact {
+  text-align: right;
+  color: var(--textWhite);
+  font-family: var(--primaryFont);
+  font-weight: 600;
+}
+.socialMedia li a:hover {
+  color: var(--themeTextColor);
+}
+.paraContact a {
+  font-family: var(--primaryFont);
+  color: #ffffffb9;
+  font-weight: normal;
+}
+.htc {
+  text-align: right;
+  margin-bottom: 20px;
+}
 /* End contactSection */
 
 @media screen and (max-width: 991px) {
@@ -379,11 +547,30 @@ li {
   /* End planSection */
 
   /* Start aboutSection */
+  .aboutImg {
+    margin-bottom: 20px;
+    width: 100%;
+  }
   /* End aboutSection */
 
   /* Start reviewSection */
+  .singleReview {
+    margin-bottom: 20px;
+  }
+  .singleReview:hover {
+    scale: none;
+  }
   /* End reviewSection */
 
   /* Start contactSection */
+  .socialMedia {
+    margin-bottom: 20px;
+  }
+  .paraContact {
+    text-align: left;
+  }
+  .htc {
+    text-align: center;
+  }
   /* End contactSection */
 }
